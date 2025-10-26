@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "@core/index.css";
+@import "@core/fonts.css";
+
+@layer base {
+    html, body, #app {
+        @apply min-h-screen;
+    }
+    body {
+        @apply bg-transparent;
+    }
+    #app {
+        @apply flex flex-col;
+    }
+}

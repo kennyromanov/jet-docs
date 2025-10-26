@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+## If there is at least one argument and it does not start with "--"
+#
+#ENV="prod"
+#
+#if [[ $# -gt 0 && "$1" != --* ]]; then
+#    ENV="$1"
+#    shift # Remove this argument so that it does not interfere
+#fi
+#
+#
+## Parsing the named arguments
+#
+#while [[ "$#" -gt 0 ]]; do
+#    case $1 in
+#        --env) ENV="$2"; shift ;;
+#        *) echo "Unknown argument: '$1'" ;;
+#    esac
+#    shift
+#done
+
+
+# Building the app
+
+bunx vite build
