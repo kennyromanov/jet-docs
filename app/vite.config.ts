@@ -14,7 +14,7 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, './src'),
       '@public': resolve(__dirname, './public'),
-      '@core/index.css': resolve(__dirname, '../core/dist/index.css'),
+      '@core/index.css': resolve(__dirname, '../core/dist/jet-docs.css'),
       '@core/fonts.css': resolve(__dirname, '../core/dist/fonts.css'),
       '@core': resolve(__dirname, '../core/dist/index.es.js'),
     },

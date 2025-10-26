@@ -25,7 +25,7 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: [ 'vue' ],
+      external: [ 'vue', 'jet-edit' ],
       output: {
         globals: {
           vue: 'Vue',

@@ -4,6 +4,7 @@
     "paths": {
       "@/*": [ "src/*" ],
       "@public/*": [ "public/*" ],
+      "@core/index.css": [ "../core/dist/jet-docs.css" ],
       "@core/*": [ "../core/dist/*" ],
       "@core": [ "../core/dist/index.es.js" ]
     },

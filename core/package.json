@@ -11,7 +11,7 @@
       "import": "./dist/index.es.js",
       "types": "./dist/index.d.ts"
     },
-    "./index.css": "./dist/index.css",
+    "./index.css": "./dist/jet-edit.css",
     "./fonts.css": "./dist/fonts.css"
   },
   "scripts": {
@@ -19,8 +19,7 @@
     "shadcn": "bin/shadcn",
     "start": "bin/start",
     "build:types": "vue-tsc --noEmit false && tsc-alias",
-    "build:css": "tailwindcss -i ./src/index.css -o ./dist/index.css --minify",
-    "build": "vite build && npm run build:types && npm run build:css",
+    "build": "vite build && npm run build:types",
     "prepare": "npm run build"
   },
   "files": [
@@ -46,12 +45,14 @@
     "vue-eslint-parser": "^10.2.0",
     "vue-tsc": "^3.1.2"
   },
+  "peerDependencies": {
+    "jet-edit": "^1.0.1"
+  },
   "dependencies": {
     "@trustme24/flext": "^1.4.3",
     "@vueuse/core": "^14.0.0",
     "axios": "^1.12.2",
     "class-variance-authority": "^0.7.1",
-    "jet-edit": "link:jet-edit",
     "lucide-vue-next": "^0.548.0",
     "mitt": "^3.0.1",
     "nanoid": "^5.1.6",
